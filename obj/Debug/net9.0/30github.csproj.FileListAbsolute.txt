@@ -12,3 +12,4 @@
 /Users/boyutov/Documents/projects/own/challenge/30github/obj/Debug/net9.0/30github.pdb
 /Users/boyutov/Documents/projects/own/challenge/30github/obj/Debug/net9.0/30github.genruntimeconfig.cache
 /Users/boyutov/Documents/projects/own/challenge/30github/obj/Debug/net9.0/ref/30github.dll
+/Users/boyutov/Documents/projects/own/challenge/30github/obj/Debug/net9.0/30github.sourcelink.json
