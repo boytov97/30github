@@ -5,6 +5,16 @@ bool isActive = false;
 decimal size = 178;
 float weight = 789;
 string? lastName = null;
+char symbol = 'd';
+
+float someValue = 4.56f;
+someValue = 67.5f;
+
+double otherValue = -786782.78f;
+
+short height = -30678;
+byte position = 255;
+long bigNumber = 9223372036854775807;
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -14,3 +24,9 @@ Console.WriteLine(isActive);
 Console.WriteLine(size);
 Console.WriteLine(weight);
 Console.WriteLine(lastName);
+Console.WriteLine(someValue);
+Console.WriteLine(height);
+Console.WriteLine(position);
+Console.WriteLine(bigNumber);
+Console.WriteLine(otherValue);
+Console.WriteLine(symbol);
