@@ -55,6 +55,21 @@ namespace project
             for (int i = 0; i < 5; i++)
                 Console.WriteLine(i);
 
+            // array
+            char[] chars = new char[3];
+            chars[0] = 'a';
+            chars[1] = 'b';
+            chars[2] = 'c';
+
+            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine(chars);
+            Console.WriteLine(numbers);
+            foreach (int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
+
             // Получение данных
             Console.ReadLine();
         }
