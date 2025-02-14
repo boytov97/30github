@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace project
 {
@@ -62,6 +63,7 @@ namespace project
             chars[2] = 'c';
 
             int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+            int[] y = { 1, 2, 3 };
 
             Console.WriteLine(chars);
             Console.WriteLine(numbers);
@@ -69,6 +71,29 @@ namespace project
             {
                 Console.WriteLine(num);
             }
+
+            foreach (int num in y)
+            {
+                Console.WriteLine(num);
+            }
+
+            int[,,] x = { { { 1, 3 }, { 4, 5 } }, { { 1, 3 }, { 4, 5 } } };
+            x[0, 1, 1] = 6;
+            foreach (int num in x)
+            {
+                Console.WriteLine("num");
+                Console.WriteLine(num);
+            }
+
+            List<string> words = new List<string>();
+            words.Add("bingo");
+            words.Add("major");
+
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }
+
 
             // Получение данных
             Console.ReadLine();
