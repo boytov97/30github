@@ -99,6 +99,10 @@ namespace project
             Console.ReadLine();
         }
 
+        public static void Print()
+        {
+            Console.WriteLine("");
+        }
     }
 
 }
