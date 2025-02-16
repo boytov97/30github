@@ -94,6 +94,13 @@ namespace project
                 Console.WriteLine(word);
             }
 
+            string currentDir = AppContext.BaseDirectory;
+            FileInfo fileInfo = new FileInfo($"{currentDir}../../../storage/products.json");
+
+            if (fileInfo.Exists)
+            {
+                Console.WriteLine($"File name: {fileInfo.Name}");
+            }
 
             // Получение данных
             Console.ReadLine();
