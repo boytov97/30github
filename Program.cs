@@ -95,11 +95,46 @@ namespace project
             }
 
             string currentDir = AppContext.BaseDirectory;
-            FileInfo fileInfo = new FileInfo($"{currentDir}../../../storage/products.json");
+            string filePath = $"{currentDir}../../../storage/products.json";
+            FileInfo fileInfo = new FileInfo(filePath);
 
             if (fileInfo.Exists)
             {
+                string fileContent = File.ReadAllText(filePath);
+
+                Console.WriteLine(fileContent);
                 Console.WriteLine($"File name: {fileInfo.Name}");
+            }
+
+            FileStream fs = null;
+            try
+            {
+                fs = new FileStream(filePath, FileMode.Open);
+                StreamReader sr = new StreamReader(fs);
+
+                string line;
+                string nLine;
+
+                line = sr.ReadLine();
+                nLine = line;
+
+                while (nLine != null)
+                {
+                    nLine = sr.ReadLine();
+                    line += $"\n{nLine}";
+                }
+
+                Console.WriteLine(line);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine("file not found");
+
+                throw new FileNotFoundException(@"[data.txt не в c:	emp папке]", e);
+            }
+            finally
+            {
+                fs?.Close();
             }
 
             // Получение данных
