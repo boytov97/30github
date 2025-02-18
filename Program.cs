@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using _30github.app.Domain.Entities;
 
 namespace project
 {
@@ -136,6 +137,16 @@ namespace project
             {
                 fs?.Close();
             }
+
+            UserEntity user = new UserEntity();
+            user.Name = "Aktan";
+            Console.WriteLine(user.Name);
+
+            ProductEntity product = new ProductEntity(78979872349234, "green-book", 6723f, "Green Book");
+            Console.WriteLine(product.GetId());
+            Console.WriteLine(product.GetHandle());
+            Console.WriteLine(product.GetPrice());
+            Console.WriteLine(product.GetTitle());
 
             // Получение данных
             Console.ReadLine();
