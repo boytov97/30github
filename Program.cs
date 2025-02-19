@@ -148,6 +148,11 @@ namespace project
             Console.WriteLine(product.GetPrice());
             Console.WriteLine(product.GetTitle());
 
+            AppleEntity appleEntity = new AppleEntity(782748792834, "apple-green", 7872f, "bingo", "Apple green - bingo");
+            appleEntity.Variety = "bingo1";
+
+            Console.WriteLine(appleEntity.Variety);
+
             // Получение данных
             Console.ReadLine();
         }
