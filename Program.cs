@@ -153,6 +153,15 @@ namespace project
 
             Console.WriteLine(appleEntity.Variety);
 
+            // operator is & as
+            Console.WriteLine(appleEntity is AppleEntity);
+
+            AppleEntity? pear = null;
+            AppleEntity? apple = null;
+            apple = pear as AppleEntity;
+
+            Console.WriteLine(apple is AppleEntity);
+
             // Получение данных
             Console.ReadLine();
         }
