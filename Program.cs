@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using _30github.app.Application.Services;
 using _30github.app.Domain.Entities;
 
 namespace project
@@ -161,6 +160,11 @@ namespace project
             apple = pear as AppleEntity;
 
             Console.WriteLine(apple is AppleEntity);
+
+            SmartCollectionManager smartCollectionManager = new SmartCollectionManager();
+            CollectionEntity collection = smartCollectionManager.GetById(87382947823);
+
+            Console.WriteLine(collection.Title);
 
             // Получение данных
             Console.ReadLine();
