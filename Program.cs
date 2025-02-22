@@ -164,6 +164,8 @@ namespace project
             SmartCollectionManager smartCollectionManager = new SmartCollectionManager();
             CollectionEntity collection = smartCollectionManager.GetById(87382947823);
 
+            collection.Title = "smart-collection";
+
             Console.WriteLine(collection.Title);
 
             // Получение данных
