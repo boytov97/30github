@@ -1,5 +1,6 @@
 ﻿using _30github.app.Application.Services;
 using _30github.app.Domain.Entities;
+using _30github.app.Infrastructure.Services;
 
 namespace project
 {
@@ -167,6 +168,10 @@ namespace project
             collection.Title = "smart-collection";
 
             Console.WriteLine(collection.Title);
+
+            UserMarketingService userMarketingService = new UserMarketingService();
+
+            Console.WriteLine(userMarketingService.SmsMarketingConsent());
 
             // Получение данных
             Console.ReadLine();
