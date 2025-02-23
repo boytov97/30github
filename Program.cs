@@ -173,6 +173,10 @@ namespace project
 
             Console.WriteLine(userMarketingService.SmsMarketingConsent());
 
+            Console.WriteLine(smartCollectionManager.GetBy(74827482948923));
+            Console.WriteLine(smartCollectionManager.GetBy(74827482948923, "bingo-collection"));
+            Console.WriteLine(smartCollectionManager.GetBy("smart"));
+
             // Получение данных
             Console.ReadLine();
         }
