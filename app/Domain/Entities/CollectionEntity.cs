@@ -1,3 +1,5 @@
+using _30github.app.Application.Enums;
+
 namespace _30github.app.Domain.Entities
 {
     class CollectionEntity
@@ -6,9 +8,9 @@ namespace _30github.app.Domain.Entities
 
         private string title;
 
-        private string type;
+        private CollectionType type;
 
-        public CollectionEntity(Int64 _id, string _title, string _type)
+        public CollectionEntity(Int64 _id, string _title, CollectionType _type)
         {
             id = _id;
             title = _title;
@@ -35,7 +37,7 @@ namespace _30github.app.Domain.Entities
             }
         }
 
-        public string Type
+        public CollectionType Type
         {
             get
             {

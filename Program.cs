@@ -168,6 +168,7 @@ namespace project
             collection.Title = "smart-collection";
 
             Console.WriteLine(collection.Title);
+            Console.WriteLine(collection.Type);
 
             UserMarketingService userMarketingService = new UserMarketingService();
 
