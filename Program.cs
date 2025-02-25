@@ -177,6 +177,7 @@ namespace project
             Console.WriteLine(smartCollectionManager.GetBy(74827482948923));
             Console.WriteLine(smartCollectionManager.GetBy(74827482948923, "bingo-collection"));
             Console.WriteLine(smartCollectionManager.GetBy("smart"));
+            Console.WriteLine(smartCollectionManager.ToString());
 
             // Получение данных
             Console.ReadLine();
