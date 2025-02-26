@@ -179,6 +179,9 @@ namespace project
             Console.WriteLine(smartCollectionManager.GetBy("smart"));
             Console.WriteLine(smartCollectionManager.ToString());
 
+            var discountCode = new DiscountCode("4FYRH", 87853f, "fixed");
+            Console.WriteLine(discountCode.Code);
+
             // Получение данных
             Console.ReadLine();
         }
