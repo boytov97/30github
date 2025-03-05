@@ -7,3 +7,4 @@
 - reading about .NET MAUI .....
 - intalled SDK for .NET MAUI
 - installed xcode from app store
+- got Xcode command line tools (xcode-select --install)
